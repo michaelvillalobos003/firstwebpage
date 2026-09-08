@@ -115,8 +115,8 @@ a:hover {
     }
 /* ===== IMAGES ===== */
 .spiderman-image {
-    width: 200px;
+    width: 50px;
     height: auto;
-    display: block;
-    margin: 1em auto;
+    display: inline-block;
+    margin: 0.5em;
 }
