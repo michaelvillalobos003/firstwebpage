@@ -1,0 +1,1 @@
+- [Workflow runtime modules](workflow-runtime-modules.md) — workflows need an explicit language module; shell runtime availability alone may not carry into workflow PATH.

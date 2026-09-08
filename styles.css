@@ -4,8 +4,10 @@
 /* ===== BASE STYLES ===== */
 :root {
     /* Define CSS variables for consistent theming */
-    --primary-bg-color: #e6f2ff; /* Light blue background */
+    --primary-bg-color: #ffd700; /* Gold background */
     --text-color: #333333; /* Default text color */
+    --name-color: #d71920; /* Red color for name */
+    --birthday-color: #000000; /* Black color for birthday */
     --font-family: 'Arial', sans-serif; /* Default font family */
 }
 
@@ -18,7 +20,7 @@
     box-sizing: border-box;
 }
 
-/* Apply the light blue background to the entire page */
+/* Apply the gold background to the entire page */
 body {
     background-color: var(--primary-bg-color);
     color: var(--text-color);
@@ -26,6 +28,44 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+}
+
+/* Style for the name and birthday section */
+.name-section {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.name-section .name {
+    color: var(--name-color);
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.name-section .birthday {
+    color: var(--birthday-color);
+    font-size: 1.4em;
+    margin-top: 0.5em;
+}
+
+/* Style for the birthday link as a box */
+.name-section .birthday a {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #000000; /* Black background */
+    border: 1px solid #333; /* Dark border for contrast */
+    border-radius: 5px; /* Rounded corners */
+    color: #ffffff; /* White text for contrast */
+    text-decoration: none;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    cursor: pointer;
+}
+
+/* Hover animation for the birthday link */
+.name-section .birthday a:hover {
+    background-color: #333333; /* Lighter black on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    transform: scale(1.05); /* Slightly enlarge the box */
 }
 
 /* ===== TYPOGRAPHY ===== */
@@ -73,12 +113,10 @@ a:hover {
     .container {
         padding: 0 0.5em;
     }
-}
-
 /* ===== IMAGES ===== */
 .spiderman-image {
-    width: 100px;
+    width: 200px;
     height: auto;
-    display: inline-block;
-    margin: 0.5em;
+    display: block;
+    margin: 1em auto;
 }
